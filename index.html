@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBPS RRB PO — 70 Day Master Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>📚 IBPS RRB PO Prelims</h1>
+        <h2>70 Day Master Tracker</h2>
+        <p>Goal: Become exam-ready for IBPS RRB PO Prelims in 70 days.</p>
+
+        <div class="hero-stats">
+            <div>
+                <strong>9</strong>
+                <span>Hours / Day</span>
+            </div>
+            <div>
+                <strong>70</strong>
+                <span>Days</span>
+            </div>
+            <div>
+                <strong>10</strong>
+                <span>Full Mocks</span>
+            </div>
+            <div>
+                <strong>60+</strong>
+                <span>Target Attempts</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="nav">
+    <button onclick="showSection('dashboard')">📊 Dashboard</button>
+    <button onclick="showSection('quant')">🧮 Quant</button>
+    <button onclick="showSection('reasoning')">🧠 Reasoning</button>
+    <button onclick="showSection('mocks')">📝 Mocks</button>
+    <button onclick="showSection('errors')">❌ Errors</button>
+    <button onclick="showSection('speed')">⏱️ Speed</button>
+    <button onclick="showSection('strategy')">🎯 Strategy</button>
+</nav>
+
+<main class="container">
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="section active">
+
+    <h2>📊 Dashboard</h2>
+
+    <div class="dashboard-grid">
+
+        <div class="stat-card">
+            <h3>Overall Progress</h3>
+            <div class="big-number" id="overallPercent">0%</div>
+            <div class="progress">
+                <div id="overallProgress"></div>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <h3>Quant Progress</h3>
+            <div class="big-number" id="quantPercent">0%</div>
+            <div class="progress">
+                <div id="quantProgress"></div>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <h3>Reasoning Progress</h3>
+            <div class="big-number" id="reasoningPercent">0%</div>
+            <div class="progress">
+                <div id="reasoningProgress"></div>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <h3>Tasks Completed</h3>
+            <div class="big-number" id="completedTasks">0</div>
+            <p id="totalTasksText">0 total tasks</p>
+        </div>
+
+    </div>
+
+    <div class="target-box">
+
+        <h2>🎯 TARGET</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Exam Time</th>
+                    <th>Questions</th>
+                    <th>Target</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Quantitative Aptitude</td>
+                    <td>20 min</td>
+                    <td>40</td>
+                    <td>28–32 attempts</td>
+                </tr>
+                <tr>
+                    <td>Reasoning Ability</td>
+                    <td>25 min</td>
+                    <td>40</td>
+                    <td>32–36 attempts</td>
+                </tr>
+                <tr>
+                    <td>Overall</td>
+                    <td>45 min</td>
+                    <td>80</td>
+                    <td>60+ attempts</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="two-column">
+
+        <div class="target-box">
+            <h2>Day 35 Target</h2>
+
+            <label><input type="checkbox" class="target-check"> Quant: 28–32 attempts</label>
+            <label><input type="checkbox" class="target-check"> Quant: 26–30 correct</label>
+            <label><input type="checkbox" class="target-check"> Reasoning: 32–36 attempts</label>
+            <label><input type="checkbox" class="target-check"> Overall: 60+ strong attempts</label>
+            <label><input type="checkbox" class="target-check"> Accuracy: 85%+</label>
+        </div>
+
+        <div class="target-box">
+            <h2>Day 70 Target</h2>
+
+            <label><input type="checkbox" class="target-check"> Quant can identify the best 28–32 questions within 20 minutes</label>
+            <label><input type="checkbox" class="target-check"> Reasoning can identify the best 32–36 questions within 25 minutes</label>
+            <label><input type="checkbox" class="target-check"> No major chapter remains untouched</label>
+            <label><input type="checkbox" class="target-check"> 10 full mocks completed</label>
+            <label><input type="checkbox" class="target-check"> All recurring mistakes reviewed</label>
+        </div>
+
+    </div>
+
+    <div class="target-box">
+        <h2>⏰ DAILY TIME STRUCTURE</h2>
+
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>4:30–6:30 AM</td>
+                <td>Quant</td>
+                <td>Concepts + Main Practice</td>
+            </tr>
+            <tr>
+                <td>10:00 AM–12:30 PM</td>
+                <td>Reasoning</td>
+                <td>Concepts + Main Practice</td>
+            </tr>
+            <tr>
+                <td>2:00–4:00 PM</td>
+                <td>Reasoning</td>
+                <td>Sets + Timed Practice</td>
+            </tr>
+            <tr>
+                <td>6:30–9:00 PM</td>
+                <td>Quant</td>
+                <td>Revision + Timed Practice</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="target-box">
+        <h2>🔁 REVISION SYSTEM</h2>
+
+        <p><strong>Every important chapter follows:</strong></p>
+
+        <div class="revision-row">
+            <span>R1: Next day</span>
+            <span>R2: +3 days</span>
+            <span>R3: +7 days</span>
+            <span>R4: +14 days</span>
+            <span>R5: +28 days</span>
+            <span>R6: Final week</span>
+        </div>
+
+        <blockquote>
+            Revision means solving questions, not simply rereading notes.
+        </blockquote>
+
+        <p><strong>Revision Rule</strong></p>
+
+        <ul>
+            <li>Major Quant chapter: 10–25 questions during revision</li>
+            <li>Quick Reasoning topic: 10–15 questions</li>
+            <li>Puzzle/Seating: 1–2 sets</li>
+            <li>If accuracy is below 80%, add the topic to the weak-topic list.</li>
+            <li>Reattempt weak topic within 2–3 days.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- QUANT -->
+
+<section id="quant" class="section">
+
+    <div class="section-header">
+        <div>
+            <h2>🧮 QUANTITATIVE APTITUDE — 70 DAY TRACKER</h2>
+            <p>Quant Priority: Concepts → Repeated Revision → Speed → Selection</p>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+
+        <table class="tracker-table">
+
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>4:30–6:30 AM — Main Work</th>
+                    <th>10:00 AM–12:30 PM — Revision/Support</th>
+                    <th>2:00–4:00 PM — Practice</th>
+                    <th>6:30–9:00 PM — Revision/Timed Work</th>
+                </tr>
+            </thead>
+
+            <tbody id="quantTable"></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- REASONING -->
+
+<section id="reasoning" class="section">
+
+    <div class="section-header">
+        <div>
+            <h2>🧠 REASONING ABILITY — 70 DAY TRACKER</h2>
+            <p>Reasoning Priority: Quick Questions → Easy Sets → Moderate Sets → Selection</p>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+
+        <table class="tracker-table">
+
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>4:30–6:30 AM — Support/Revision</th>
+                    <th>10:00 AM–12:30 PM — Main Work</th>
+                    <th>2:00–4:00 PM — Sets/Practice</th>
+                    <th>6:30–9:00 PM — Revision/Timed Work</th>
+                </tr>
+            </thead>
+
+            <tbody id="reasoningTable"></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- MOCKS -->
+
+<section id="mocks" class="section">
+
+    <h2>📝 FULL MOCK TRACKER</h2>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Mock</th>
+                    <th>Day</th>
+                    <th>Score</th>
+                    <th>Quant</th>
+                    <th>Reasoning</th>
+                    <th>Accuracy</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+
+            <tbody id="mockTable"></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- ERRORS -->
+
+<section id="errors" class="section">
+
+    <h2>📝 ERROR NOTEBOOK</h2>
+
+    <p>Every mistake must be recorded.</p>
+
+    <div class="table-wrapper">
+
+        <table id="errorTable">
+
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Chapter</th>
+                    <th>Why Wrong?</th>
+                    <th>Correct Method</th>
+                    <th>Time Taken</th>
+                    <th>Error Code</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+
+    </div>
+
+    <button class="primary-btn" onclick="addErrorRow()">+ Add Mistake</button>
+
+    <div class="target-box">
+
+        <h2>Error Codes</h2>
+
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Concept mistake</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>Calculation mistake</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>Speed problem</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>Misread question</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>Wrong guess</td>
+            </tr>
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- SPEED -->
+
+<section id="speed" class="section">
+
+    <h2>⏱️ SPEED TARGETS</h2>
+
+    <div class="two-column">
+
+        <div class="target-box">
+
+            <h2>Quantitative Aptitude</h2>
+
+            <table>
+                <tr><th>Topic</th><th>Target Time</th></tr>
+                <tr><td>Simplification</td><td>20–25 sec</td></tr>
+                <tr><td>Approximation</td><td>20–25 sec</td></tr>
+                <tr><td>Number Series</td><td>30–40 sec</td></tr>
+                <tr><td>Quadratic</td><td>30–40 sec</td></tr>
+                <tr><td>Percentage</td><td>40–50 sec</td></tr>
+                <tr><td>Ratio</td><td>40–50 sec</td></tr>
+                <tr><td>Average</td><td>40–50 sec</td></tr>
+                <tr><td>Profit & Loss</td><td>45–60 sec</td></tr>
+                <tr><td>Simple Interest</td><td>45–60 sec</td></tr>
+                <tr><td>Compound Interest</td><td>45–60 sec</td></tr>
+                <tr><td>Time & Work</td><td>50–70 sec</td></tr>
+                <tr><td>Time-Speed-Distance</td><td>50–70 sec</td></tr>
+                <tr><td>Misc. Arithmetic</td><td>60–90 sec</td></tr>
+                <tr><td>Easy DI</td><td>45–60 sec</td></tr>
+            </table>
+
+        </div>
+
+        <div class="target-box">
+
+            <h2>🧠 REASONING SPEED TARGETS</h2>
+
+            <table>
+                <tr><th>Topic</th><th>Target Time</th></tr>
+                <tr><td>Inequality</td><td>15–25 sec</td></tr>
+                <tr><td>Syllogism</td><td>20–30 sec</td></tr>
+                <tr><td>Direction</td><td>25–35 sec</td></tr>
+                <tr><td>Blood Relation</td><td>25–40 sec</td></tr>
+                <tr><td>Ranking</td><td>25–40 sec</td></tr>
+                <tr><td>Coding</td><td>30–45 sec</td></tr>
+                <tr><td>Easy Puzzle</td><td>3–5 min</td></tr>
+                <tr><td>Moderate Puzzle</td><td>5–7 min</td></tr>
+                <tr><td>Difficult Puzzle</td><td>SKIP</td></tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STRATEGY -->
+
+<section id="strategy" class="section">
+
+    <h2>🎯 EXAM SELECTION STRATEGY</h2>
+
+    <div class="target-box">
+
+        <h2>Quant</h2>
+
+        <h3>Priority 1 — Solve First</h3>
+
+        <label><input type="checkbox" class="strategy-check"> Simplification</label>
+        <label><input type="checkbox" class="strategy-check"> Approximation</label>
+        <label><input type="checkbox" class="strategy-check"> Number Series</label>
+        <label><input type="checkbox" class="strategy-check"> Quadratic Equations</label>
+
+        <h3>Priority 2</h3>
+
+        <label><input type="checkbox" class="strategy-check"> Percentage</label>
+        <label><input type="checkbox" class="strategy-check"> Ratio</label>
+        <label><input type="checkbox" class="strategy-check"> Average</label>
+        <label><input type="checkbox" class="strategy-check"> Profit</label>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+    <p>📚 IBPS RRB PO Prelims — 70 Day Master Tracker</p>
+    <button onclick="resetTracker()" class="danger-btn">Reset All Progress</button>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
